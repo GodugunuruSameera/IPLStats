@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPLStats | Matches</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>IPL<span>Stats</span></h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="teams.html">Teams</a>
+        <a href="players.html">Players</a>
+        <a href="matches.html" class="active">Matches</a>
+        <a href="points.html">Points Table</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Tournament Schedule & Results</h2>
+
+    <div style="max-width: 600px; margin: 0 auto 30px auto;">
+      <input type="text" id="filterMatch" placeholder="Filter by Team Code (e.g. CSK, MI) or Status (Upcoming)" onkeyup="filterMatches()">
+    </div>
+
+    <div class="card-grid" id="matchList"></div>
+  </div>
+
+  <footer><p>© 2026 IPLStats.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/matches.js"></script>
+</body>
+</html>
