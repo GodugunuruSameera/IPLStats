@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPLStats | Points Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>IPL<span>Stats</span></h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="teams.html">Teams</a>
+        <a href="players.html">Players</a>
+        <a href="matches.html">Matches</a>
+        <a href="points.html" class="active">Points Table</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+      <h2>Official Standings</h2>
+      <button onclick="sortPointsTable()">Sort by Points / NRR</button>
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>M</th>
+            <th>W</th>
+            <th>L</th>
+            <th>NRR</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody id="pointsTableBody"></tbody>
+      </table>
+    </div>
+    <p style="margin-top:10px; font-size:0.9rem; color:#6b7280;">*Top 2 teams highlighted in green qualify for Qualifier 1.</p>
+  </div>
+
+  <footer><p>© 2026 IPLStats.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/points.js"></script>
+</body>
+</html>
