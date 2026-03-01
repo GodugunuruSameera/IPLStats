@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPLStats | Players</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>IPL<span>Stats</span></h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="teams.html">Teams</a>
+        <a href="players.html" class="active">Players</a>
+        <a href="matches.html">Matches</a>
+        <a href="points.html">Points Table</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Player Statistics</h2>
+
+    <div style="display:flex; gap:15px; margin-bottom:30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <input type="text" id="searchPlayer" placeholder="Search by name or team..." onkeyup="filterPlayers()">
+      <select id="filterRole" onchange="filterPlayers()" style="width:300px;">
+        <option value="">All Roles</option>
+        <option value="Batsman">Batsman</option>
+        <option value="Bowler">Bowler</option>
+        <option value="All-Rounder">All-Rounder</option>
+      </select>
+    </div>
+
+    <div class="card-grid" id="playerList"></div>
+  </div>
+
+  <footer><p>© 2026 IPLStats.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/players.js"></script>
+</body>
+</html>
